@@ -2,13 +2,14 @@ package Sorting;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Locale;
 
 public class Anagram {
     public static void main(String[] args) {
         String str1="geeksforgeeks";
         String str2="forgeeksgeezs";
         char array1[] = str1.toCharArray();
-        char array2[] = str2.toCharArray();
+        char array2[] = str2.toLowerCase().toCharArray();
         char[] count = new char[123];
         System.out.println(Arrays.toString(count));
         for(int i = 0; i < array1.length;i++)
